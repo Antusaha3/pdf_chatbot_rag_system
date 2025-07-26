@@ -53,22 +53,6 @@ uvicorn main:app --reload
 Visit http://127.0.0.1:8000/docs for the API Swagger UI.
  
 
-Project Structure
-.
-├── main.py                  # FastAPI app
-├── app/
-│   ├── chunker.py           # PDF to chunked text
-│   ├── embedding.py         # Embedding and FAISS index
-│   ├── vector_store.py      # FAISS loading/retrieval
-│   ├── llm_generator.py     # QA extraction & fallback logic
-│   ├── language_utilities.py# Language detection/translation
-│   └── language_detect.py   # Basic language detection
-├── data/
-│   ├── HSC26-Bangla1st-Paper.pdf # Knowledge PDF
-│   ├── chunks.json
-│   └── faiss_langchain_index/
-├── requirements.txt
-└── README.md
 
 🔍 How It Works
 Chunking: PDF is split into overlapping, QA-friendly text chunks.
